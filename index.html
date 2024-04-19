@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style>
+      .gray-row {
+        background-color: #ccc;
+        height: 70px;
+      }
+
+      td {
+        font-size: 30px;
+        text-align: center;
+        border: 1px solid #ddd;
+        height: 70px;
+      }
+
+      td.btn-clear {
+        background-color: #ddd;
+      }
+
+      td.btn-orange {
+        background-color: #ff8c00;
+        color: #fff;
+      }
+
+      td.btn-orange:hover {
+        background-color: #ff8c00;
+      }
+
+      td.btn-wide {
+        width: 50%;
+      }
+
+      .btn-top {
+        margin-top: 20px;
+      }
+
+      .btn-operators {
+        font-size: 40px;
+      }
+
+      .btn-operators.btn-orange {
+        font-size: 50px;
+      }
+
+      .btn-operators.btn-orange:hover {
+        font-size: 60px;
+      }
+
+      .btn-numbers {
+        font-size: 30px;
+      }
+
+      .btn-numbers.btn-wide {
+        width: 100%;
+      }
+
+      .btn-numbers.btn-zero {
+        width: 100%;
+        font-size: 40px;
+      }
+
+      .symbol-orange {
+        color: #ff8c00;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <td colspan="4" class="gray-row text-right">0</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="btn btn-lg btn-lightgray">AC</button></td>
+            <td><button class="btn btn-lg btn-lightgray">+/-</button></td>
+            <td><button class="btn btn-lg btn-lightgray">%</button></td>
+            <td><button class="btn btn-lg btn-orange">÷</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-lg btn-lightgray">7</button></td>
+            <td><button class="btn btn-lg btn-lightgray">8</button></td>
+            <td><button class="btn btn-lg btn-lightgray">9</button></td>
+            <td><button class="btn btn-lg btn-orange">x</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-lg btn-lightgray">4</button></td>
+            <td><button class="btn btn-lg btn-lightgray">5</button></td>
+            <td><button class="btn btn-lg btn-lightgray">6</button></td>
+            <td><button class="btn btn-lg btn-orange">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-lg btn-lightgray">1</button></td>
+            <td><button class="btn btn-lg btn-lightgray">2</button></td>
+            <td><button class="btn btn-lg btn-lightgray">3</button></td>
+            <td><button class="btn btn-lg btn-orange">+</button></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button class="btn btn-lg btn-lightgray zero">0</button>
+            </td>
+            <td><button class="btn btn-lg btn-lightgray">.</button></td>
+            <td><button class="btn btn-lg btn-orange">=</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
